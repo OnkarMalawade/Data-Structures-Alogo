@@ -44,7 +44,6 @@ int lastoccurance(int arr[],int size,int key){
     }
     return ans;
 }
-
 int main()
 {
     int arr[7]={1,3,3,3,3,7,9};

@@ -1,5 +1,6 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
+
 int getpivot(int arr[],int n)
 {
     int s=0;
@@ -17,8 +18,10 @@ int getpivot(int arr[],int n)
     }
     return e;
 }
-int main(){
-    int arr[5]={2,3,4 ,5,6 };
-    cout<<getpivot(arr,5);
+
+int main()
+{
+    int arr[5]={3,8,10,17,1};
+    cout<<"\n Pivot is "<<getpivot(arr,5)<<endl;
     return 0;
 }
