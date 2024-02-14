@@ -34,7 +34,42 @@ void halfPyramid(int n){
 		cout << endl;
 	}
 }
-
+void diamond(int n){
+	int row = 1;
+	while(row <= n){
+		// spaces
+		int spaces = n - row;
+		while(spaces){
+			cout << "_ ";
+			spaces--;
+		}
+		// star
+		int star = 2 * row - 1;
+		while(star >= 1){
+			cout << "* ";
+			star--;
+		}
+		cout << endl;
+		row++;
+	}
+	row = n - 1;
+	while(row >= 1){
+		// spaces
+		int spaces = n - row;
+		while(spaces){
+			cout << "_ ";
+			spaces--;
+		}
+		// star
+		int star = 2 * row - 1;
+		while(star >= 1){
+			cout << "* ";
+			star--;
+		}
+		cout << endl;
+		row--;
+	}
+}
 int main(){
 	int c,r;
 	cin >> c >> r; 
@@ -45,6 +80,8 @@ int main(){
 	cin >> n;
 	
 	halfPyramid(n);
+
+	diamond(n);
 	
 	return 0;
 }
